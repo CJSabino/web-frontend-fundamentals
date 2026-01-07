@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel='stylesheet' type='text/css' href='./estilos.css'>
+    </head>
+    <body>
+        <!--#include virtual="menu.html"-->
+        <div class="hr-barra">
+        Formulário</div>
+        <form action="./recebe.php" method="POST">
+        <input type='hidden' name='bloco' value="1">
+        <table style="margin-left: 0;">
+            <th colspan="2" align="left">Cadastro de Funcionario</th>
+            <tr><td class='txtitem'>Nome:</td><td><input type="text" name="Texto" size="50" maxlength="150" placeholder="Nome"></td></tr>
+            <tr><td class='txtitem'>Sobrenome:</td><td><input type="text" name="Texto" size="50" maxlength="150" placeholder="Sobrenome"></td></tr>
+            <tr><td class='txtitem'>Email:</td><td><input type="email" name="email" size="50" maxlength="150" placeholder="Email Aqui"></td></tr>
+            <tr><td class='txtitem'>Senha:</td><td><input type="password" name="Texto" size="50" maxlength="150" placeholder="Senha Aqui"></td></tr>
+            <tr><td class='txtitem'>Nascimento:</td><td><input type="date" name="data"></td></tr>
+            <tr><td class='txtitem'>Telefone</td><td><input type="tel" name="tel" placeholder="(XX) XXXXX-XXXX"></td></tr>
+            <tr><td class='txtitem'>CEP</td><td><input type="tel" name="cep" placeholder="XXXXX-XXX"></td></tr>
+            <tr><td class='txtitem'>Estado Civil:</td><td>(<input type="radio" name="Radio" value="1">) Solteiro(a) |
+                                        (<input type="radio" name="Radio" value="2">) Casado(a) |
+                                        (<input type="radio" name="Radio" value="3">) Divorciado(a) |
+                                        (<input type="radio" name="Radio" value="4">) Viúvo(a)</td></tr>
+            <tr><td class='txtitem'>Cargo:</td><td><select name="contrat"><option value="01">Analista de TI</option><option value="02">Web Designer</option><option value="03">Desenvolvedor C++</option><option value="04">Assistente Administrativo</option><option value="05">Gerente de Projeto</option></select></td></tr>
+            <tr><td class='txtitem'>Cidade:</td><td><select name="contrat"><option value="01">Ourinhos</option><option value="02">Jacarézinho</option><option value="03">Chavantes</option><option value="04">Canitar</option><option value="05">Ipaussu</option></select></td></tr>
+            <tr><td class='txtitem' valign="top">Tipo de Contrato:</td><td><select name="contrat" multiple><option value="01">CLT</option><option value="02">PJ</option><option value="03">Estágio</option></select>Ctrl+Clique Para marcar mais de um item</td></tr>
+            <tr><td class='txtitem'>Cor Preferida</td><td><input type="color" name="Cor"></td></tr>
+            <tr><td class='txtitem'>CNH Habilitação</td><td><input type="checkbox" name="cnh" value="1"> A |<input type="checkbox" name="Texto" value="2"> B |<input type="checkbox" name="Texto" value="3"> AB |</td></tr>
+            <tr><td class='txtitem'>Dia/Horario Disponivel</td><td><input type="datetime-local" name="datetime-local"></td></tr>
+            <tr><td class='txtitem'>Mes/Ano de Inicio</td><td><input type="month" name="month"></td></tr>
+            <tr><td class='txtitem'></td><td><input type="hidden" name="escondido"></td></tr>
+            <tr><td class='txtitem'>Foto Perfil: </td><td><input type="file" name="arquivo" accept="image/*"></td></tr>
+            <tr><td class='txtitem'>Numero de Identificação</td><td><input type="number" name="number" placeholder="Digite seu numero de Identificação..."></td></tr>
+            <tr><td class='txtitem'>Site Pessoal ou Portfólio</td><td><input type="url" name="url" placeholder="Link...">></td></tr>
+            <tr><td class='txtitem' valign="top">Resenha Profissional</td><td><textarea name="resenha" rows="5" cols="60" placeholder="Atividades Profissionais"></textarea></td></tr>
+            <tr><td class='txtitem'>Ações:</td></tr>
+            <tr><td class='txtitem'>Limpar Informações</td><td><input type="reset" name="Reset" value="Limpar Campos" class="botao"></td></tr>
+            <tr><td class='txtitem'>Salvar Informações</td><td><input type="button" name="Botao" value="Salvar" class="botao"></td></tr>
+            <tr><td class='txtitem'>Enviar Informações</td><td><input type="submit" name="Texto" value="Enviar" class="botao"></td></tr>
+        </table>
+        <div>
+        <center>
+        <hr size="1" color="black">
+        <p>Formulário | &copy 2025.2 FATEC Ourinhos - 4ºTarde - formula.html
+        </center>
+        </div>
+    </body>
+</html>

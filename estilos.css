@@ -1,0 +1,82 @@
+
+body{
+    width: 80%;
+    margin: 40px auto 0;
+    background-color: linen; 
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    
+}
+
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: red;
+}
+
+.botao {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+table {
+    width: 80%; 
+    margin: auto;
+    width: fit-content; 
+    border: 0px;
+    border-collapse: collapse;}
+
+th {
+    color: red; 
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.hr-barra{
+  display: flex;
+  align-items: center;
+  color: red;
+}
+
+.hr-barra:after{
+  content: '';
+  flex-grow: 1;
+  height: 2px; 
+  background-color: red;
+  margin-left: 1px;
+}
+
+.rela {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.rela td{
+    border: 1px solid black;
+    text-align: left;
+}
+
+.verde {
+    background-color: lightgreen;
+}
+
+font {
+    font-family: 'Courier New', Courier, monospace;
+}
+.txtitem {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: black;
+}
+
+.txtdesc {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+
+
